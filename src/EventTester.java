@@ -1,3 +1,5 @@
+// Carson Stell
+
 import java.time.Duration;
 import java.time.LocalDateTime;
 import java.util.Arrays;
@@ -75,7 +77,7 @@ public class EventTester {
                         && firstMeeting.getLocation().equals(locationAlt)
         );
 
-        // change back to original values
+        // changes back to original values
         lastDeadline.setName(lastDeadlineName);
         lastDeadline.setDateTime(deadline);
         firstMeeting.setEndDateTime(end);
@@ -97,8 +99,8 @@ public class EventTester {
         );
     }
 
+    // tests to see if duration 1 == duration 2
     public static boolean testMeetingDuration() {
-        // duration of meeting should be one hour
         Duration duration1 =  firstMeeting.getDuration();
         Duration duration2 = Duration.ofHours(1);
         return duration1.equals(duration2);
