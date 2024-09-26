@@ -1,4 +1,4 @@
 public interface Completable {
-    // void complete()
-    // boolean isComplete()
+    void complete();
+    boolean isComplete();
 }
